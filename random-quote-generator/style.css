@@ -1,0 +1,48 @@
+body {
+  background: linear-gradient(to bottom right, #0095d9, #4300d9);
+  background-attachment: fixed;
+  font: 18px "Raleway", "Montserrat", sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
+  transition: background 300ms ease-in-out;
+}
+
+h1 {
+  color: #eee;
+  text-align: center;
+  margin-top: 2em;
+  font: 3em "Montserrat";
+  font-weight: bold;
+}
+
+.blockquote {
+  color: #303F9F;
+  font-size: 1.5em;
+  line-height: 1.1;
+  margin-left: 10px;
+  transition: color 300ms ease-in-out;
+}
+
+.quote-container {
+  max-width: 450px;
+  padding: 30px 30px;
+  background-color: #eee;
+  margin: 100px auto;
+  box-shadow: 6px 6px 0 #ccc;
+  transition: all 75ms ease-out;
+}
+
+.quote-container:active {
+  transform: translateX(4px) translateY(4px);
+  box-shadow: 3px 3px 0 #ccc;
+}
+
+#author {
+  display: block;
+  text-align: right;
+  color: #303F9F;
+  margin-top: 20px;
+}
+
+#tweet { display: none }

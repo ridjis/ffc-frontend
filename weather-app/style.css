@@ -1,0 +1,59 @@
+* { box-sizing: border-box }
+
+body {
+  margin: 0;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+}
+
+header {
+  height: 20vh;
+  text-align: center;
+  line-height: 30vh;
+}
+header i.fa {
+  font-size: 40px;
+  vertical-align: text-bottom;
+  margin-right: 15px;
+}
+header .location {
+  display: inline;
+  font-size: 46px;
+  font-family: Raleway, sans-serif;
+}
+header .location #town::after { content: "," }
+
+#info {
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+}
+#info .more {
+  width: 320px;
+}
+#info .more i.icon {
+  max-width: 160px;
+  font-size: 160px;
+  float: left;
+}
+#info .more .max, #info .more .min {
+  display: inline-block;
+  width: 130px;
+  font-size: 36px;
+  text-align: right;
+  float: right;
+}
+#info .more .max { margin-bottom: 50px }
+
+.max-temp::after, .min-temp::after { content: "°" }
+.max i.fa-angle-up, .min i.fa-angle-down { font-size: 46px }
+
+#info .current {
+  font-size: 200px;
+  cursor: pointer;
+}
+#info .current::after { content: "°" }
