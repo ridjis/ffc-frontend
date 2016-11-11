@@ -57,3 +57,35 @@ header .location #town::after { content: "," }
   cursor: pointer;
 }
 #info .current::after { content: "°" }
+
+.overlay {
+  background: rgba(0,0,0,0.75);
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay .modal {
+  position: relative;
+  display: inline-block;
+  width: 645px;
+}
+.description {
+  padding: 1rem;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.overlay img.gif {
+  width: 650px;
+  height: auto;
+}
+.modal #close-btn {
+  position: absolute;
+  top: 65px; right: -65px;
+  font-size: 50px;
+  line-height: 0;
+  cursor: pointer;
+}

@@ -8,6 +8,17 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
 </head>
 <body>
+	
+	<section class="overlay" id="closeable">
+		<div class="modal">
+			<div class="description">
+				Because of protocols incosistency (GitHub is using HTTPS but weather API HTTP) you're probaby not going to see weather information, so you should "load unsafe script" as is shown in pic bellow. ⬇
+			</div>
+			<img src="unsafe-script.gif" class="gif" alt="How to">
+			<span id="close-btn">&times;</span>
+		</div>
+	</section>
+
 	<header>
 		<i class="fa fa-map-marker"></i>
 		<div class="location">
@@ -30,6 +41,7 @@
 		</div>
 		<span class="current"></span>
 	</section>
+
 
 	<script src="main.js"></script>
 </body>

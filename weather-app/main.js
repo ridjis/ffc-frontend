@@ -90,6 +90,12 @@ function ready(fn) {
 }
 
 ready(function() {
+	document.getElementById("close-btn").addEventListener("click", (event) => {
+		event.preventDefault();
+		console.log("in");
+
+		document.getElementById("closeable").style.display = "none";
+	});
 	getLocation();
 	const map = document.getElementsByClassName("current")[0];
 	console.log(map);
