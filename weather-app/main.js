@@ -39,27 +39,27 @@ function parsingCurrent() {
 	switch(json.weather[0].main.toLowerCase()) {
 		case "clouds":
 			changeIcon(icon, "wi-cloudy");
-			body.style["background-image"] = `${gradient}, url("https://hd.unsplash.com/photo-1462040700793-fcd2dbc0edf0")`;
+			body.style["background-image"] = `${gradient}, url("http://i.imgur.com/I8BTGHv.jpg")`;
 			break;
 		case "rain":
 			changeIcon(icon, "wi-hail");
-			body.style["background-image"] = `${gradient}, url("https://hd.unsplash.com/photo-1435914149323-1b656e7ab379")`;
+			body.style["background-image"] = `${gradient}, url("http://i.imgur.com/Km9pgf7.jpg")`;
 			break;
 		case "clear":
 			changeIcon(icon, "wi-day-sunny");
-			body.style["background-image"] = `${gradient}, url("https://hd.unsplash.com/photo-1433147926609-4a89b40610cc")`;
+			body.style["background-image"] = `${gradient}, url("http://i.imgur.com/P1YKIKO.jpg")`;
 			break;
 		case "thunderstorm":
 			changeIcon(icon, "wi-day-thunderstorm");
-			body.style["background-image"] = `${gradient}, url("https://hd.unsplash.com/photo-1427507791254-e8d2fe7db7c0")`;
+			body.style["background-image"] = `${gradient}, url("http://i.imgur.com/EP2QgOT.jpg")`;
 			break;
 		case "show":
 			changeIcon(icon, "wi-snow");
-			body.style["background-image"] = `${gradient}, url("http://www.thisiscolossal.com/wp-content/uploads/2016/01/eyeem-79952556.jpg")`;
+			body.style["background-image"] = `${gradient}, url("http://i.imgur.com/v5HvWFY.jpg")`;
 			break;
 		default:
 			changeIcon(icon, "wi-day-cloudy-gusts");
-			body.style["background-image"] = `${gradient}, url("https://hd.unsplash.com/photo-1458898257815-0ec6bfaa0ade")`;
+			body.style["background-image"] = `${gradient}, url("http://i.imgur.com/N7Y9wl3.jpg")`;
 			break;
 	}
 }
