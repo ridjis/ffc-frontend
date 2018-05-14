@@ -1,5 +1,5 @@
-const DAILY_URI_LATLON = "http://api.openweathermap.org/data/2.5/forecast/daily";
-const CURRENT_URI_LATLON = "http://api.openweathermap.org/data/2.5/weather";
+const DAILY_URI_LATLON = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast/daily";
+const CURRENT_URI_LATLON = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather";
 const API_KEY = "&APPID=4c2cb45265febf619ec70af6f2dd363c";
 let UNITS = "metric";
 
@@ -39,27 +39,27 @@ function parsingCurrent() {
 	switch(json.weather[0].main.toLowerCase()) {
 		case "clouds":
 			changeIcon(icon, "wi-cloudy");
-			body.style["background-image"] = `${gradient}, url("http://i.imgur.com/I8BTGHv.jpg")`;
+			body.style["background-image"] = `${gradient}, url("https://i.imgur.com/sf8O2mY.jpg")`;
 			break;
 		case "rain":
 			changeIcon(icon, "wi-hail");
-			body.style["background-image"] = `${gradient}, url("http://i.imgur.com/Km9pgf7.jpg")`;
+			body.style["background-image"] = `${gradient}, url("https://i.imgur.com/RoBr48j.jpg")`;
 			break;
 		case "clear":
 			changeIcon(icon, "wi-day-sunny");
-			body.style["background-image"] = `${gradient}, url("http://i.imgur.com/P1YKIKO.jpg")`;
+			body.style["background-image"] = `${gradient}, url("https://i.imgur.com/dA00Juc.jpg")`;
 			break;
 		case "thunderstorm":
 			changeIcon(icon, "wi-day-thunderstorm");
-			body.style["background-image"] = `${gradient}, url("http://i.imgur.com/EP2QgOT.jpg")`;
+			body.style["background-image"] = `${gradient}, url("https://i.imgur.com/EP2QgOT.jpg")`;
 			break;
 		case "show":
 			changeIcon(icon, "wi-snow");
-			body.style["background-image"] = `${gradient}, url("http://i.imgur.com/v5HvWFY.jpg")`;
+			body.style["background-image"] = `${gradient}, url("https://i.imgur.com/v5HvWFY.jpg")`;
 			break;
 		default:
 			changeIcon(icon, "wi-day-cloudy-gusts");
-			body.style["background-image"] = `${gradient}, url("http://i.imgur.com/N7Y9wl3.jpg")`;
+			body.style["background-image"] = `${gradient}, url("https://i.imgur.com/igvjwLn.jpg")`;
 			break;
 	}
 }
@@ -90,12 +90,6 @@ function ready(fn) {
 }
 
 ready(function() {
-	document.getElementById("close-btn").addEventListener("click", (event) => {
-		event.preventDefault();
-		console.log("in");
-
-		document.getElementById("closeable").style.display = "none";
-	});
 	getLocation();
 	const map = document.getElementsByClassName("current")[0];
 	console.log(map);
